@@ -1,0 +1,63 @@
+[
+    {
+        "id": "proj-001",
+        "title": "NexusAI - Personal Knowledge OS",
+        "description": "An intelligence layer built over a structured database framework, turning messy documentation paths into unified actionable assets using API models.",
+        "techStack": [
+            "MongoDB",
+            "Express",
+            "React",
+            "Node.js",
+            "Gemini AI"
+        ],
+        "githubLink": "https://github.com/yourusername/nexus-ai",
+        "liveLink": "https://nexusai.yourdomain.com",
+        "image": "/assets/projects/nexus-ai.webp",
+        "isFeatured": true
+    },
+    {
+        "id": "proj-002",
+        "title": "Global Commerce Engine",
+        "description": "A highly scalable e-commerce infrastructure built to manage extensive real-time transactions, heavy lookups, and state logic caching patterns elegantly.",
+        "techStack": [
+            "Node.js",
+            "Redis",
+            "PostgreSQL",
+            "Docker"
+        ],
+        "githubLink": "https://github.com/yourusername/commerce-engine",
+        "liveLink": "",
+        "image": "/assets/projects/commerce.webp",
+        "isFeatured": true
+    },
+    {
+        "id": "proj-003",
+        "title": "Focus Intelligence Dashboard",
+        "description": "Data orchestration dashboard designed for high-performing engineering groups monitoring resource flow pipelines and metrics processing structures.",
+        "techStack": [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "GraphQL"
+        ],
+        "githubLink": "https://github.com/yourusername/focus-dashboard",
+        "liveLink": "https://focus.yourdomain.com",
+        "image": "/assets/projects/dashboard.webp",
+        "isFeatured": false
+    },
+    {
+        "id": "proj-004",
+        "title": "Professional Portfolio v2.0",
+        "description": "A carefully optimized, component-driven client-side application featuring lightweight rendering, structural code patterns, and minimal asset footprints.",
+        "techStack": [
+            "React",
+            "Vite",
+            "CSS",
+            "Framer Motion"
+        ],
+        "githubLink": "https://github.com/yourusername/portfolio-v2",
+        "liveLink": "https://myot.dev",
+        "image": "/assets/projects/portfolio.webp",
+        "isFeatured": false
+    }
+]

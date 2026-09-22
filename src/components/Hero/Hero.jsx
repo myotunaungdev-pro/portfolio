@@ -14,8 +14,8 @@ export default function Hero() {
                     I don't just write code; I build systems that solve problems and drive progress.
                 </p>
                 <div className="hero-actions">
-                    <a href="https://www.upwork.com/freelancers/~01993589e09ca8089c" target="_blank" rel="noreferrer" className="btn-primary">Hire on Upwork</a>
-                    <a href="https://github.com/mintaka21-engi" target="_blank" rel="noreferrer" className="btn-ghost">View My GitHub</a>
+                    <a href="https://www.upwork.com" target="_blank" rel="noreferrer" className="btn-primary">Hire on Upwork</a>
+                    <a href="https://github.com/myotunaungdev-pro" target="_blank" rel="noreferrer" className="btn-ghost">View My GitHub</a>
                 </div>
             </div>
 

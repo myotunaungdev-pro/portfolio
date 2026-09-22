@@ -15,6 +15,7 @@ export default function About() {
         }, { threshold: 0.05 });
 
         if (aboutRef.current) {
+            // Animate value items
             const items = aboutRef.current.querySelectorAll('.value-item');
             items.forEach((el, i) => {
                 el.style.opacity = '0';
@@ -22,15 +23,37 @@ export default function About() {
                 el.style.transition = `opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1) ${i * 0.05}s, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) ${i * 0.05}s`;
                 observer.observe(el);
             });
+
+            // Animate skill categories
+            const skillCats = aboutRef.current.querySelectorAll('.skill-category');
+            skillCats.forEach((el, i) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(16px)';
+                el.style.transition = `opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1) ${(i * 0.1) + 0.2}s, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) ${(i * 0.1) + 0.2}s`;
+                observer.observe(el);
+            });
         }
 
         return () => observer.disconnect();
     }, []);
 
-    const skills = [
-        "MongoDB", "Express.js", "React", "Node.js",
-        "JavaScript (ES6+)", "AI API Integration",
-        "RESTful APIs", "Git/GitHub", "Technical English"
+    const skillCategories = [
+        {
+            title: "Frontend",
+            skills: ["HTML5", "CSS3", "JavaScript (ES6+)", "React", "Tailwind CSS", "Bootstrap", "Responsive Web Design"]
+        },
+        {
+            title: "Backend & DB",
+            skills: ["Node.js", "Express.js", "MongoDB"]
+        },
+        {
+            title: "APIs & Tools",
+            skills: ["RESTful API Integration", "Stripe", "Git", "GitHub"]
+        },
+        {
+            title: "AI & Learning",
+            skills: ["Gemini AI", "Python"]
+        }
     ];
 
     return (
@@ -42,9 +65,17 @@ export default function About() {
                     <p className="section-sub">
                         Driven by a legacy of integrity and a mission to support my family, I execute every project with the precision of a Future Engineer.
                     </p>
-                    <div className="skills-wrap">
-                        {skills.map((skill, idx) => (
-                            <span className="skill-pill" key={idx}>{skill}</span>
+
+                    <div className="skills-container">
+                        {skillCategories.map((category, idx) => (
+                            <div className="skill-category" key={idx}>
+                                <h4 className="skill-category-title">{category.title}</h4>
+                                <div className="skillList-wrap">
+                                    {category.skills.map((skill, sIdx) => (
+                                        <span className="skill-pill" key={sIdx}>{skill}</span>
+                                    ))}
+                                </div>
+                            </div>
                         ))}
                     </div>
                 </div>

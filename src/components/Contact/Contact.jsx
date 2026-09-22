@@ -87,12 +87,12 @@ export default function Contact() {
                     <h2 className="contact-heading">Initialize <em>Connection.</em></h2>
                     <p className="contact-sub">Available immediately for international contracts, remote full-stack workloads, and production integrations. Let's discuss your system architecture.</p>
                     <div className="contact-links">
-                        <a href="mailto:mintaka.age21@gmail.com" className="contact-link">
-                            <span className="contact-link-icon">//</span> mintaka.age21@gmail.com
+                        <a href="mailto:myotunaung.dev@gmail.com" className="contact-link">
+                            <span className="contact-link-icon">//</span> myotunaung.dev@gmail.com
                         </a>
 
-                        <a href="https://github.com/mintaka21-engi" target="_blank" rel="noreferrer" className="contact-link">
-                            <span className="contact-link-icon">//</span> github.com/mintaka21-engi
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="contact-link">
+                            <span className="contact-link-icon">//</span> linkedin.com
                         </a>
                     </div>
                 </div>

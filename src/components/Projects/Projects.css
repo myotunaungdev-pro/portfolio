@@ -47,17 +47,33 @@
     letter-spacing: 0.05em;
 }
 
-.work-title {
+/* Newly updated CSS for the Title section */
+.work-header {
+    margin-bottom: 0.85rem;
+}
+
+.work-name {
     font-size: 1.35rem;
     font-weight: 600;
     color: var(--text-heading);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0;
+}
+
+.work-type {
+    font-size: 0.9rem;
+    color: var(--accent);
+    /* Using Accent Color to make the App type stand out more */
+    font-weight: 500;
+    display: block;
+    opacity: 0.9;
 }
 
 .work-desc {
     font-size: 0.95rem;
     color: var(--text-body);
     line-height: 1.6;
+    margin-top: 0;
 }
 
 .project-links {

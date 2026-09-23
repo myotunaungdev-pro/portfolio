@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import './About.css';
 
 export default function About() {
@@ -37,21 +38,23 @@ export default function About() {
         return () => observer.disconnect();
     }, []);
 
+    const { t } = useTranslation();
+
     const skillCategories = [
         {
-            title: "Frontend",
+            title: t('about.skills.frontend'),
             skills: ["HTML5", "CSS3", "JavaScript (ES6+)", "React", "Tailwind CSS", "Bootstrap", "Responsive Web Design"]
         },
         {
-            title: "Backend & DB",
+            title: t('about.skills.backend'),
             skills: ["Node.js", "Express.js", "MongoDB"]
         },
         {
-            title: "APIs & Tools",
+            title: t('about.skills.apis'),
             skills: ["RESTful API Integration", "Stripe", "Git", "GitHub"]
         },
         {
-            title: "AI & Learning",
+            title: t('about.skills.ai'),
             skills: ["Gemini AI", "Python"]
         }
     ];
@@ -60,10 +63,10 @@ export default function About() {
         <section id="about" ref={aboutRef}>
             <div className="about-layout">
                 <div>
-                    <p className="section-label">Executive Summary</p>
-                    <h2 className="section-title">Articulating my journey from a resilient self-learner to a systems architect.</h2>
+                    <p className="section-label">{t('about.sectionLabel')}</p>
+                    <h2 className="section-title">{t('about.sectionTitle')}</h2>
                     <p className="section-sub">
-                        Driven by a legacy of integrity and a mission to support my family, I execute every project with the precision of a Future Engineer.
+                        {t('about.sectionSub')}
                     </p>
 
                     <div className="skills-container">
@@ -84,15 +87,15 @@ export default function About() {
                     <div className="value-item">
                         <div className="value-dot">01</div>
                         <div className="value-text">
-                            <strong>Architecture Over Syntax</strong>
-                            <p>Frameworks change, but system properties like reliability, clean interfaces, and computational scaling remain constants. I build with structural integrity first.</p>
+                            <strong>{t('about.value1Title')}</strong>
+                            <p>{t('about.value1Desc')}</p>
                         </div>
                     </div>
                     <div className="value-item">
                         <div className="value-dot">02</div>
                         <div className="value-text">
-                            <strong>Deterministic Execution</strong>
-                            <p>I thrive on execution and deadlines. Whether configuring validation layers or prompt engineering loops, logic runs exactly as engineered.</p>
+                            <strong>{t('about.value2Title')}</strong>
+                            <p>{t('about.value2Desc')}</p>
                         </div>
                     </div>
                 </div>

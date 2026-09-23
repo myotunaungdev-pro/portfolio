@@ -1,21 +1,23 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Hero.css';
 import profileImg from '../../assets/profile.webp';
 
 
 export default function Hero() {
+    const { t } = useTranslation();
+
     return (
         <div className="hero">
             <div className="hero-text">
-                <p className="hero-eyebrow">Full-Stack (MERN) &amp; AI Engineering Specialist</p>
-                <h1>Engineering Scalable Systems with <em>Code &amp; Logic.</em></h1>
+                <p className="hero-eyebrow">{t('hero.role')}</p>
+                <h1>{t('hero.title1')} <em>{t('hero.title2')} <br className="hidden md:block" /> {t('hero.title3')}</em></h1>
                 <p className="hero-bio">
-                    A disciplined developer focused on building robust web architectures and integrating AI solutions.
-                    I don't just write code; I build systems that solve problems and drive progress.
+                    {t('hero.description')}
                 </p>
                 <div className="hero-actions">
-                    <a href="https://www.upwork.com" target="_blank" rel="noreferrer" className="btn-primary">Hire on Upwork</a>
-                    <a href="https://github.com/myotunaungdev-pro" target="_blank" rel="noreferrer" className="btn-ghost">View My GitHub</a>
+                    <a href="https://www.upwork.com" target="_blank" rel="noreferrer" className="btn-primary">{t('hero.hireMe')}</a>
+                    <a href="https://github.com/myotunaungdev-pro" target="_blank" rel="noreferrer" className="btn-ghost">{t('hero.github')}</a>
                 </div>
             </div>
 

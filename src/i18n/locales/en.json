@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "FULL-STACK (MERN) & AI ENGINEER",
+    "title1": "Building Scalable",
+    "title2": "Systems with",
+    "title3": "Code & Logic.",
+    "description": "I'm a developer who loves building solid web architectures and integrating AI solutions. For me, it's not just about writing code—it's about building systems that actually solve problems and make things work better.",
+    "hireMe": "Hire me on Upwork",
+    "github": "View My GitHub"
+  },
+  "projects": {
+    "sectionLabel": "MY RECENT WORK",
+    "sectionTitle": "Projects Built for the Real World",
+    "sectionSub": "Here are some of the systems I've developed, focusing on scalability, clean architecture, and practical AI integration."
+  },
+  "about": {
+    "sectionLabel": "A Bit About Me",
+    "sectionTitle": "My journey from a self-taught learner to a passionate systems builder.",
+    "sectionSub": "Driven by a strong sense of responsibility to support my family, I treat every project as a stepping stone towards becoming a top-tier Senior Engineer, always aiming for precision.",
+    "value1Title": "Architecture Over Syntax",
+    "value1Desc": "Frameworks come and go, but core concepts like System Design, scalable folder structures, and clean code principles are here to stay. I always prioritize these structural foundations first.",
+    "value2Title": "Reliable Execution",
+    "value2Desc": "I love getting things done right and on time. Whether it's setting up validation layers or writing prompt engineering loops, I make sure the logic runs exactly as intended.",
+    "skills": {
+      "frontend": "Frontend",
+      "backend": "Backend & DB",
+      "apis": "APIs & Tools",
+      "ai": "AI & Learning"
+    }
+  },
+  "contact": {
+    "heading1": "Let's Work",
+    "heading2": "Together.",
+    "sub": "I'm currently available for remote full-stack roles, freelance contracts, or production integrations. Let's talk about how I can help with your next system architecture.",
+    "form": {
+      "identity": "Identity",
+      "namePlaceholder": "Your name",
+      "endpoint": "Endpoint",
+      "emailPlaceholder": "your@email.com",
+      "messageLabel": "Project Details / Message",
+      "messagePlaceholder": "Tell me a bit about your system or project needs...",
+      "btnTransmit": "Send Message",
+      "btnSending": "Sending...",
+      "btnSuccess": "Message Sent Successfully ✓",
+      "btnFailed": "Failed to Send ✗"
+    }
+  },
+  "footer": {
+    "copy": "© 2026 Myo Tun Aung. Engineered for global performance.",
+    "status": "[ Ready for production ]"
+  }
+}

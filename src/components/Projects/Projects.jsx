@@ -1,9 +1,12 @@
 import React, { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import projectData from '../../data/projects.json';
 import './Projects.css';
 
 export default function Projects() {
     const gridRef = useRef(null);
+    const { t, i18n } = useTranslation();
+    const currentLang = i18n.language || 'en';
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
@@ -25,14 +28,14 @@ export default function Projects() {
 
     return (
         <section id="work">
-            <p className="section-label">Selected Projects</p>
-            <h2 className="section-title">Production-Ready Deployments</h2>
-            <p className="section-sub">A calculated selection of systems designed to showcase scalability, architectural integrity, and automated intelligence.</p>
+            <p className="section-label">{t('projects.sectionLabel')}</p>
+            <h2 className="section-title">{t('projects.sectionTitle')}</h2>
+            <p className="section-sub">{t('projects.sectionSub')}</p>
 
             <div className="work-grid" ref={gridRef}>
                 {projectData.map((project, idx) => (
-                    <div 
-                        className="work-card" 
+                    <div
+                        className="work-card"
                         key={project.id}
                         style={{ '--animation-order': idx }}
                     >
@@ -41,9 +44,15 @@ export default function Projects() {
                                 <span className="tech-badge" key={tech}>{tech}</span>
                             ))}
                         </div>
-                        <h3 className="work-title">{project.title}</h3>
-                        <p className="work-desc">{project.description}</p>
-                        
+
+                        {/* Separated Name and Type instead of using a single Title */}
+                        <div className="work-header">
+                            <h3 className="work-name">{project.name[currentLang]}</h3>
+                            <span className="work-type">{project.type[currentLang]}</span>
+                        </div>
+
+                        <p className="work-desc">{project.description[currentLang]}</p>
+
                         <div className="project-links">
                             {project.githubLink && (
                                 <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link">

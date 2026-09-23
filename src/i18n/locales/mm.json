@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "projects": "Projects",
+    "about": "အကြောင်း",
+    "contact": "ဆက်သွယ်ရန်"
+  },
+  "hero": {
+    "role": "FULL-STACK (MERN) & AI ENGINEER",
+    "title1": "ခိုင်မာတဲ့ စနစ်တွေကို",
+    "title2": "Code တွေ Logic တွေနဲ့",
+    "title3": "တည်ဆောက်နေပါတယ်။",
+    "description": "ကျွန်တော်ကတော့ သပ်ရပ်ခိုင်မာတဲ့ Web Architecture တွေနဲ့ AI နည်းပညာတွေကို ပေါင်းစပ်တည်ဆောက်ရတာကို ဝါသနာပါတဲ့ Developer တစ်ယောက်ပါ။ Code တွေ ရေးရုံသက်သက်မဟုတ်ဘဲ တကယ့်လက်တွေ့ပြဿနာတွေကို ဖြေရှင်းပေးနိုင်မယ့် စနစ် (Systems) တွေကို တည်ဆောက်နေတာပါ။",
+    "hireMe": "Upwork မှာ ငှားရမ်းရန်",
+    "github": "GitHub မှာ ဝင်ကြည့်ရန်"
+  },
+  "projects": {
+    "sectionLabel": "ကျွန်တော့်ရဲ့ လက်ရာတချို့",
+    "sectionTitle": "လက်တွေ့အသုံးပြုနိုင်တဲ့ Project များ",
+    "sectionSub": "Scalability ကောင်းကောင်းနဲ့ AI နည်းပညာတွေကိုပါ ပေါင်းစပ်ပြီး သေချာစနစ်တကျ ရေးသားထားတဲ့ Project တချို့ကို ဒီမှာ လေ့လာကြည့်နိုင်ပါတယ်။"
+  },
+  "about": {
+    "sectionLabel": "ကျွန်တော့်အကြောင်း တစေ့တစောင်း",
+    "sectionTitle": "ကိုယ့်ဘာသာကြိုးစားလေ့လာသူ ဘဝကနေ Systems တွေကို စနစ်တကျတည်ဆောက်သူတစ်ယောက်ဖြစ်လာပုံ။",
+    "sectionSub": "မိသားစုကို ထောက်ပံ့ချင်တဲ့ စိတ်ဆန္ဒတွေနဲ့အတူ Project တစ်ခုချင်းစီတိုင်းကို အနာဂတ်မှာ Senior Engineer တစ်ယောက်ဖြစ်လာမယ့် ရည်မှန်းချက်နဲ့ အကောင်းဆုံး၊ အတိကျဆုံးဖြစ်အောင် အမြဲကြိုးစားနေပါတယ်။",
+    "value1Title": "Architecture Over Syntax",
+    "value1Desc": "Framework တွေကတော့ အမြဲပြောင်းလဲနေမှာပါပဲ။ ဒါပေမယ့် System Design၊ Scalable ဖြစ်တဲ့ Folder Structure တွေနဲ့ Clean Code ရေးသားမှုတွေကတော့ အမြဲတမ်းအရေးပါပါတယ်။ ဒါကြောင့် ကျွန်တော်က Architecture နဲ့ ဖွဲ့စည်းပုံခိုင်မာမှုကို အမြဲဦးစားပေးပါတယ်။",
+    "value2Title": "Reliable Execution",
+    "value2Desc": "အလုပ်တစ်ခုကို သတ်မှတ်ထားတဲ့ အချိန်အတွင်းမှာ သေသေချာချာ ပြီးမြောက်အောင်လုပ်ရတာကို သဘောကျပါတယ်။ Validation Layer တွေရေးတာပဲဖြစ်ဖြစ်၊ Prompt Engineering Loops တွေဖန်တီးတာပဲဖြစ်ဖြစ် Logic တွေကို စဉ်းစားထားတဲ့အတိုင်း တိတိကျကျ အလုပ်လုပ်အောင် ဖန်တီးပါတယ်။",
+    "skills": {
+      "frontend": "Frontend",
+      "backend": "Backend & DB",
+      "apis": "APIs & Tools",
+      "ai": "AI & Learning"
+    }
+  },
+  "contact": {
+    "heading1": "အတူတူ",
+    "heading2": "လက်တွဲအလုပ်လုပ်ကြရအောင်။",
+    "sub": "အခုလက်ရှိမှာတော့ Remote Full-stack အလုပ်တွေ၊ နိုင်ငံတကာက Freelance Project တွေနဲ့ Production ပိုင်းဆိုင်ရာ လုပ်ငန်းတွေအတွက် လက်ခံလုပ်ဆောင်ပေးနေပါတယ်။ သင့်ရဲ့ နောက်ထပ် System Architecture အကြောင်းကို အတူတူ ဆွေးနွေးကြည့်ကြမလား။",
+    "form": {
+      "identity": "သင့်နာမည်",
+      "namePlaceholder": "နာမည်လေး ရေးပေးပါ",
+      "endpoint": "အီးမေးလ်",
+      "emailPlaceholder": "your@email.com",
+      "messageLabel": "လိုအပ်ချက်များ / မက်ဆေ့ခ်ျ",
+      "messagePlaceholder": "Project နဲ့ ပတ်သက်တဲ့ အကြောင်းအရာလေးတွေ ရေးပေးပါ...",
+      "btnTransmit": "မက်ဆေ့ခ်ျပို့မည်",
+      "btnSending": "ပို့နေပါတယ်...",
+      "btnSuccess": "အောင်မြင်စွာပေးပို့ပြီးပါပြီ ✓",
+      "btnFailed": "ပေးပို့ခြင်း မအောင်မြင်ပါ ✗"
+    }
+  },
+  "footer": {
+    "copy": "© 2026 Myo Tun Aung. ကမ္ဘာ့အဆင့်မီ စွမ်းဆောင်ရည်အတွက် ဖန်တီးထားသည်။",
+    "status": "[ Production အတွက် အသင့်ဖြစ်ပါပြီ ]"
+  }
+}

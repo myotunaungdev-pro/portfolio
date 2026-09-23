@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 export default function Contact() {
+    const { t } = useTranslation();
     const [formStatus, setFormStatus] = useState({
-        text: 'Transmit Message',
+        text: t('contact.form.btnTransmit'),
         disabled: false,
         success: false
     });
@@ -35,7 +37,7 @@ export default function Contact() {
         e.preventDefault();
 
         setFormStatus({
-            text: 'Sending...',
+            text: t('contact.form.btnSending'),
             disabled: true,
             success: false
         });
@@ -48,7 +50,7 @@ export default function Contact() {
         )
             .then((result) => {
                 setFormStatus({
-                    text: 'Transmission Successful ✓',
+                    text: t('contact.form.btnSuccess'),
                     disabled: true,
                     success: true
                 });
@@ -56,7 +58,7 @@ export default function Contact() {
 
                 setTimeout(() => {
                     setFormStatus({
-                        text: 'Transmit Message',
+                        text: t('contact.form.btnTransmit'),
                         disabled: false,
                         success: false
                     });
@@ -65,14 +67,14 @@ export default function Contact() {
             }, (error) => {
                 console.error('EmailJS Error:', error);
                 setFormStatus({
-                    text: 'Transmission Failed ✗',
+                    text: t('contact.form.btnFailed'),
                     disabled: false,
                     success: false
                 });
 
                 setTimeout(() => {
                     setFormStatus({
-                        text: 'Transmit Message',
+                        text: t('contact.form.btnTransmit'),
                         disabled: false,
                         success: false
                     });
@@ -84,8 +86,8 @@ export default function Contact() {
         <div className="contact-section" id="contact">
             <div className="contact-inner">
                 <div>
-                    <h2 className="contact-heading">Initialize <em>Connection.</em></h2>
-                    <p className="contact-sub">Available immediately for international contracts, remote full-stack workloads, and production integrations. Let's discuss your system architecture.</p>
+                    <h2 className="contact-heading">{t('contact.heading1')} <em>{t('contact.heading2')}</em></h2>
+                    <p className="contact-sub">{t('contact.sub')}</p>
                     <div className="contact-links">
                         <a href="mailto:myotunaung.dev@gmail.com" className="contact-link">
                             <span className="contact-link-icon">//</span> myotunaung.dev@gmail.com
@@ -100,17 +102,17 @@ export default function Contact() {
                 <form className="contact-form" onSubmit={handleSubmit} ref={formRef}>
                     <div className="form-row">
                         <div className="form-field">
-                            <label>Identity</label>
-                            <input type="text" name="user_name" placeholder="Your name" required />
+                            <label>{t('contact.form.identity')}</label>
+                            <input type="text" name="user_name" placeholder={t('contact.form.namePlaceholder')} required />
                         </div>
                         <div className="form-field">
-                            <label>Endpoint</label>
-                            <input type="email" name="user_email" placeholder="your@email.com" required />
+                            <label>{t('contact.form.endpoint')}</label>
+                            <input type="email" name="user_email" placeholder={t('contact.form.emailPlaceholder')} required />
                         </div>
                     </div>
                     <div className="form-field">
-                        <label>System Requirements / Message</label>
-                        <textarea rows="4" name="message" placeholder="Describe the system or project parameters…" required></textarea>
+                        <label>{t('contact.form.messageLabel')}</label>
+                        <textarea rows="4" name="message" placeholder={t('contact.form.messagePlaceholder')} required></textarea>
                     </div>
                     <button
                         type="submit"

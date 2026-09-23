@@ -1,8 +1,18 @@
 [
     {
         "id": "proj-001",
-        "title": "MIN NOTE - SaaS Note-taking Platform",
-        "description": "A production-ready SaaS application designed for seamless organization. It features a responsive UI, multi-language localization (English, Myanmar, Thai), and complete subscription lifecycle management via Stripe.",
+        "name": {
+            "en": "MIN NOTE",
+            "mm": "MIN NOTE"
+        },
+        "type": {
+            "en": "SaaS Note-taking Platform",
+            "mm": "SaaS မှတ်စုရေးသည့် Platform"
+        },
+        "description": {
+            "en": "A production-ready SaaS application designed to make organizing your notes completely seamless. It features a beautifully responsive UI, supports English, Myanmar, and Thai languages, and handles subscriptions effortlessly via Stripe.",
+            "mm": "ကိုယ်ပိုင်မှတ်စုတွေကို စနစ်တကျနဲ့ လွယ်လွယ်ကူကူ သိမ်းဆည်းထားချင်သူတွေအတွက် ရည်ရွယ်ဖန်တီးထားတဲ့ SaaS application လေးပါ။ ဖုန်းရော ကွန်ပျူတာမှာပါ အဆင်ပြေပြေသုံးနိုင်အောင် ရေးဆွဲထားပြီး၊ မြန်မာ၊ အင်္ဂလိပ်၊ ထိုင်း ဘာသာစကား ၃ မျိုးနဲ့ သုံးနိုင်ပါတယ်။ Subscription တွေအတွက်လည်း Stripe ကို ချိတ်ဆက်အသုံးပြုထားပါတယ်။"
+        },
         "techStack": [
             "MongoDB",
             "Express",
@@ -19,8 +29,18 @@
     },
     {
         "id": "proj-002",
-        "title": "NexusAI - Personal Knowledge OS",
-        "description": "An intelligence layer built over a structured database framework, turning messy documentation paths into unified actionable assets using API models.",
+        "name": {
+            "en": "NexusAI",
+            "mm": "NexusAI"
+        },
+        "type": {
+            "en": "Personal Knowledge OS",
+            "mm": "ကိုယ်ပိုင်အသိပညာ OS"
+        },
+        "description": {
+            "en": "This project acts like a smart brain for your documents. It takes messy, unorganized data and turns it into structured, useful information using AI models.",
+            "mm": "ဒီ Project လေးကတော့ ကိုယ့်ရဲ့ ရှုပ်ပွနေတဲ့ မှတ်တမ်းတွေနဲ့ Data တွေကို AI အကူအညီနဲ့ စနစ်တကျ ပြန်စီစဉ်ပေးမယ့် Personal OS လေးတစ်ခုပဲ ဖြစ်ပါတယ်။"
+        },
         "techStack": [
             "MongoDB",
             "Express",
@@ -35,8 +55,18 @@
     },
     {
         "id": "proj-003",
-        "title": "Global Commerce Engine",
-        "description": "A highly scalable e-commerce infrastructure built to manage extensive real-time transactions, heavy lookups, and state logic caching patterns elegantly.",
+        "name": {
+            "en": "Global Commerce",
+            "mm": "Global Commerce"
+        },
+        "type": {
+            "en": "e-Commerce Infrastructure",
+            "mm": "e-Commerce စနစ်"
+        },
+        "description": {
+            "en": "I developed this scalable e-commerce infrastructure to handle a massive amount of real-time transactions smoothly. It's heavily optimized for quick data lookups and smart caching.",
+            "mm": "အချိန်တိုအတွင်း အရောင်းအဝယ်လုပ်ငန်းစဉ် အများကြီးကို တပြိုင်နက်တည်း ချောချောမွေ့မွေ့ လုပ်ဆောင်နိုင်အောင် တည်ဆောက်ထားတဲ့ e-commerce system ကြီးတစ်ခုပါ။ Data တွေ အမြန်ရှာနိုင်ဖို့နဲ့ Caching စနစ်တွေအတွက်ပါ သေချာစဉ်းစားပြီး ရေးသားထားပါတယ်။"
+        },
         "techStack": [
             "Node.js",
             "Redis",
@@ -50,8 +80,18 @@
     },
     {
         "id": "proj-004",
-        "title": "Focus Intelligence Dashboard",
-        "description": "Data orchestration dashboard designed for high-performing engineering groups monitoring resource flow pipelines and metrics processing structures.",
+        "name": {
+            "en": "Focus Intelligence",
+            "mm": "Focus Intelligence"
+        },
+        "type": {
+            "en": "Data Orchestration Dashboard",
+            "mm": "Data Dashboard"
+        },
+        "description": {
+            "en": "A sleek data dashboard tailored for high-performing engineering teams. It helps you monitor resource flows and process complex metrics in a very clear, visual way.",
+            "mm": "Engineering အဖွဲ့တွေအတွက် အဓိကရည်ရွယ်ပြီး ဖန်တီးထားတဲ့ Dashboard လေးပါ။ Data စီးဆင်းမှုတွေနဲ့ အရေးကြီးတဲ့ Metrics တွေကို တစ်နေရာတည်းမှာ ရှင်းရှင်းလင်းလင်း စောင့်ကြည့်လို့ရအောင် လုပ်ပေးထားပါတယ်။"
+        },
         "techStack": [
             "React",
             "TypeScript",
@@ -65,15 +105,25 @@
     },
     {
         "id": "proj-005",
-        "title": "Professional Portfolio v2.0",
-        "description": "A carefully optimized, component-driven client-side application featuring lightweight rendering, structural code patterns, and minimal asset footprints.",
+        "name": {
+            "en": "Portfolio",
+            "mm": "Portfolio"
+        },
+        "type": {
+            "en": "Personal Website",
+            "mm": "ကိုယ်ပိုင် Website"
+        },
+        "description": {
+            "en": "This is my personal portfolio website, built from the ground up for speed and performance. I focused on clean code, lightweight rendering, and minimal asset sizes to keep things running smoothly.",
+            "mm": "ဒါကတော့ ကျွန်တော့်ရဲ့ ကိုယ်ပိုင် Portfolio Website လေးပါ။ အသုံးပြုရတာ မြန်ဆန်ပေါ့ပါးအောင် အထူးဂရုစိုက်ပြီး ရေးသားထားသလို၊ Code တွေကိုလည်း စနစ်တကျဖြစ်အောင် သေချာပြင်ဆင်ထားပါတယ်။"
+        },
         "techStack": [
             "React",
             "Vite",
             "CSS",
             "Framer Motion"
         ],
-        "githubLink": "https://github.com/myotunaungdev-pro",
+        "githubLink": "https://github.com/myotunaungdev-pro/portfolio",
         "liveLink": "",
         "image": "/assets/",
         "isFeatured": false

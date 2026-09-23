@@ -55,3 +55,23 @@
         gap: 1.5rem;
     }
 }
+
+.lang-switcher {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-body);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 0.05em;
+}
+
+.lang-switcher:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.05); /* Assuming dark mode default, adapt as needed */
+}

@@ -31,6 +31,21 @@ body {
     overflow-x: hidden;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0B1324;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.3); /* subtle border color */
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
 section {
     padding: 8rem 3rem;
     max-width: 1200px;

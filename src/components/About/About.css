@@ -36,21 +36,40 @@
 }
 
 .skill-pill {
-    background: #1E293B;
-    border: 1px solid var(--border);
-    border-radius: 0.25rem;
+    background: rgba(30, 41, 59, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.375rem;
     padding: 0.5rem 1rem;
     font-family: var(--font-mono);
     font-size: 0.8rem;
     color: var(--text-heading);
     font-weight: 400;
-    transition: border-color 0.2s, background 0.2s, color 0.2s;
+    cursor: default;
+    
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1) var(--anim-delay, 0s),
+                transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) var(--anim-delay, 0s),
+                border-color 0.3s ease,
+                background 0.3s ease,
+                color 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
-.skill-pill:hover {
+.skill-pill.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skill-pill.is-visible:hover {
+    transform: translateY(-3px);
     border-color: var(--accent);
     background: rgba(16, 185, 129, 0.08);
     color: var(--accent);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2);
+    transition-delay: 0s; /* Override entry delay so hover is immediate */
 }
 
 .about-values {

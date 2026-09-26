@@ -9,8 +9,13 @@ export default function About() {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(e => {
                 if (e.isIntersecting) {
-                    e.target.style.opacity = '1';
-                    e.target.style.transform = 'translateY(0)';
+                    if (e.target.classList.contains('skill-pill')) {
+                        e.target.classList.add('is-visible');
+                    } else {
+                        e.target.style.opacity = '1';
+                        e.target.style.transform = 'translateY(0)';
+                    }
+                    observer.unobserve(e.target);
                 }
             });
         }, { threshold: 0.05 });
@@ -25,12 +30,10 @@ export default function About() {
                 observer.observe(el);
             });
 
-            // Animate skill categories
-            const skillCats = aboutRef.current.querySelectorAll('.skill-category');
-            skillCats.forEach((el, i) => {
-                el.style.opacity = '0';
-                el.style.transform = 'translateY(16px)';
-                el.style.transition = `opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1) ${(i * 0.1) + 0.2}s, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) ${(i * 0.1) + 0.2}s`;
+            // Animate skill pills
+            const skillPills = aboutRef.current.querySelectorAll('.skill-pill');
+            skillPills.forEach((el, i) => {
+                el.style.setProperty('--anim-delay', `${i * 0.05 + 0.1}s`);
                 observer.observe(el);
             });
         }

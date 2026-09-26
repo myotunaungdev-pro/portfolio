@@ -114,7 +114,7 @@ h1 em {
     background: #050B14;
     box-shadow: 0 0 30px rgba(56, 189, 248, 0.15);
     z-index: 1;
-    transform: translateX(60px) translateY(40px);
+    transform: translateX(-80px) translateY(-40px);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -134,7 +134,7 @@ h1 em {
 }
 
 .profile-container:hover {
-    transform: translateX(60px) translateY(30px);
+    transform: translateX(-80px) translateY(-45px);
     box-shadow: 0 0 40px rgba(56, 189, 248, 0.3);
 }
 
@@ -173,8 +173,13 @@ h1 em {
     background: #EF4444;
 }
 
-.terminal-btn.b2 { background: #F59E0B; }
-.terminal-btn.b3 { background: #10B981; }
+.terminal-btn.b2 {
+    background: #F59E0B;
+}
+
+.terminal-btn.b3 {
+    background: #10B981;
+}
 
 .terminal-body {
     padding: 1.5rem;
@@ -187,8 +192,13 @@ h1 em {
     margin-bottom: 0.75rem;
 }
 
-.terminal-body .cmd { color: var(--text-heading); }
-.terminal-body .output { color: var(--accent); }
+.terminal-body .cmd {
+    color: var(--text-heading);
+}
+
+.terminal-body .output {
+    color: var(--accent);
+}
 
 .floating-tag {
     position: absolute;
@@ -202,23 +212,57 @@ h1 em {
     color: var(--text-heading);
     white-space: nowrap;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    z-index: 10;
 }
 
-.tag-1 { top: -1.5rem; right: 0rem; border-left: 3px solid var(--accent); }
-.tag-2 { bottom: 2rem; right: -1.5rem; }
-.tag-3 { bottom: 6rem; left: -2rem; }
+.tag-1 {
+    top: -1.5rem;
+    right: 0rem;
+    border-left: 3px solid var(--accent);
+}
+
+.tag-2 {
+    bottom: 2rem;
+    right: -1.5rem;
+}
+
+.tag-3 {
+    bottom: 1rem;
+    left: -2rem;
+}
 
 /* CSS Keyframes Animations */
 @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(16px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.hero-eyebrow { animation: fadeUp 0.4s ease both 0.05s; }
-h1 { animation: fadeUp 0.4s ease both 0.15s; }
-.hero-bio { animation: fadeUp 0.4s ease both 0.25s; }
-.hero-actions { animation: fadeUp 0.4s ease both 0.35s; }
-.hero-visual { animation: fadeUp 0.5s ease both 0.2s; }
+.hero-eyebrow {
+    animation: fadeUp 0.4s ease both 0.05s;
+}
+
+h1 {
+    animation: fadeUp 0.4s ease both 0.15s;
+}
+
+.hero-bio {
+    animation: fadeUp 0.4s ease both 0.25s;
+}
+
+.hero-actions {
+    animation: fadeUp 0.4s ease both 0.35s;
+}
+
+.hero-visual {
+    animation: fadeUp 0.5s ease both 0.2s;
+}
 
 @media (max-width: 900px) {
     .hero {
@@ -226,29 +270,62 @@ h1 { animation: fadeUp 0.4s ease both 0.15s; }
         padding: 7rem 1.5rem 3rem;
         text-align: center;
     }
-    .hero-eyebrow { justify-content: center; }
-    .hero-bio { margin: 0 auto 2rem; }
-    .hero-actions { justify-content: center; }
-    .hero-visual { 
-        margin-top: 3rem; 
+
+    .hero-eyebrow {
+        justify-content: center;
+    }
+
+    .hero-bio {
+        margin: 0 auto 2rem;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        margin-top: 3rem;
         min-height: auto;
     }
+
     .profile-container {
         transform: none;
         width: 160px;
         height: 160px;
-        margin-bottom: -20px; /* Overlap slightly with terminal */
+        margin-bottom: -20px;
+        /* Overlap slightly with terminal */
         z-index: 3;
     }
+
     .profile-container:hover {
         transform: scale(1.02);
     }
-    .terminal-frame { 
+
+    .terminal-frame {
         transform: none;
-        max-width: 320px; 
-        height: auto; 
+        max-width: 320px;
+        height: auto;
         min-height: 220px;
         z-index: 2;
     }
-    .floating-tag { display: none; }
+
+    .floating-tag {
+        display: block;
+        transform: scale(0.85);
+    }
+
+    .tag-1 {
+        top: -2rem;
+        right: -1rem;
+    }
+
+    .tag-2 {
+        bottom: 1rem;
+        right: -2rem;
+    }
+
+    .tag-3 {
+        bottom: 0.3rem;
+        left: -1rem;
+    }
 }

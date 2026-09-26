@@ -82,6 +82,11 @@ export default function Contact() {
             });
     };
 
+    const handleTextareaChange = (e) => {
+        e.target.style.height = 'inherit';
+        e.target.style.height = `${e.target.scrollHeight}px`;
+    };
+
     return (
         <div className="contact-section" id="contact">
             <div className="contact-inner">
@@ -112,7 +117,14 @@ export default function Contact() {
                     </div>
                     <div className="form-field">
                         <label>{t('contact.form.messageLabel')}</label>
-                        <textarea rows="4" name="message" placeholder={t('contact.form.messagePlaceholder')} required></textarea>
+                        <textarea 
+                            rows="4" 
+                            name="message" 
+                            placeholder={t('contact.form.messagePlaceholder')} 
+                            onChange={handleTextareaChange}
+                            style={{ overflow: 'hidden', resize: 'none' }}
+                            required
+                        ></textarea>
                     </div>
                     <button
                         type="submit"

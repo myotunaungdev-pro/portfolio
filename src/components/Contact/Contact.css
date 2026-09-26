@@ -1,6 +1,6 @@
 .contact-section {
-    background: #0B1324;
-    border-top: 1px solid var(--border);
+    background: var(--bg-color);
+    border-top: 1px solid var(--border-color);
     padding: 8rem 3rem;
 }
 
@@ -18,18 +18,18 @@
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
-    color: var(--text-heading);
+    color: var(--text-color);
     letter-spacing: -0.02em;
 }
 
 .contact-heading em {
-    color: var(--accent);
+    color: var(--accent-color);
     font-style: normal;
 }
 
 .contact-sub {
     font-size: 1rem;
-    color: var(--text-body);
+    color: var(--text-color);
     line-height: 1.75;
     margin-bottom: 2.5rem;
 }
@@ -46,17 +46,17 @@
     gap: 0.75rem;
     font-family: var(--font-mono);
     font-size: 0.9rem;
-    color: var(--text-body);
+    color: var(--text-color);
     text-decoration: none;
     transition: color 0.2s;
 }
 
 .contact-link:hover {
-    color: var(--accent);
+    color: var(--accent-color);
 }
 
 .contact-link-icon {
-    color: var(--accent);
+    color: var(--accent-color);
     font-weight: bold;
 }
 
@@ -64,10 +64,13 @@
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    background: var(--bg-card);
+    background: var(--card-bg);
     padding: 2.5rem;
     border-radius: 0.5rem;
-    border: 1px solid var(--border);
+    border: 1px solid var(--border-color);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
 }
 
 .form-row {
@@ -86,30 +89,32 @@
     font-family: var(--font-mono);
     font-size: 0.75rem;
     text-transform: uppercase;
-    color: var(--text-body);
+    color: var(--text-color);
 }
 
 .form-field input,
 .form-field textarea {
-    background: var(--bg-main);
-    border: 1px solid var(--border);
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
     border-radius: 0.375rem;
     padding: 0.85rem 1rem;
     font-size: 0.9rem;
-    color: var(--text-heading);
+    color: var(--text-color);
     font-family: inherit;
     outline: none;
     transition: border-color 0.2s;
     resize: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .form-field input:focus,
 .form-field textarea:focus {
-    border-color: var(--accent);
+    border-color: var(--accent-color);
 }
 
 .btn-send {
-    background: var(--accent);
+    background: var(--accent-color);
     color: #FFFFFF; /* Accessibility မြှင့်တင်ရန် အဖြူရောင်ပြောင်းထားသည် */
     border: none;
     padding: 0.85rem 2rem;
@@ -118,6 +123,8 @@
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .btn-send:hover:not(:disabled) {

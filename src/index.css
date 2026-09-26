@@ -7,16 +7,29 @@
 }
 
 :root {
-    --bg-main: #0F172A;
-    --bg-card: #1E293B;
-    --bg-nav: rgba(15, 23, 42, 0.85);
-    --accent: #10B981;
+    --bg-color: #0f172a;
+    --text-color: #f8fafc;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --accent-color: #10b981;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    
+    /* Kept for existing references, mapping to new vars where possible */
     --accent-glow: rgba(16, 185, 129, 0.15);
-    --text-heading: #F8FAFC;
-    --text-body: #94A3B8;
-    --text-muted: #64748B;
-    --border: rgba(148, 163, 184, 0.1);
     --font-mono: 'JetBrains Mono', monospace;
+    --bg-nav: rgba(15, 23, 42, 0.85);
+}
+
+[data-theme='light'] {
+    --bg-color: #f8fafc;
+    --text-color: #0f172a;
+    --card-bg: #ffffff;
+    --accent-color: #059669;
+    --border-color: #e2e8f0;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    --accent-glow: rgba(5, 150, 105, 0.15);
+    --bg-nav: rgba(248, 250, 252, 0.85);
 }
 
 html {
@@ -25,8 +38,8 @@ html {
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background: var(--bg-main);
-    color: var(--text-body);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -57,7 +70,7 @@ section {
     font-size: 0.8rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: var(--accent);
+    color: var(--accent-color);
     font-weight: 500;
     margin-bottom: 0.75rem;
 }
@@ -65,7 +78,7 @@ section {
 .section-title {
     font-size: clamp(1.8rem, 3vw, 2.4rem);
     font-weight: 700;
-    color: var(--text-heading);
+    color: var(--text-color);
     margin-bottom: 1rem;
     line-height: 1.25;
     letter-spacing: -0.01em;
@@ -73,7 +86,7 @@ section {
 
 .section-sub {
     font-size: 1.05rem;
-    color: var(--text-body);
+    color: var(--text-color);
     font-weight: 400;
     max-width: 600px;
     line-height: 1.75;
@@ -82,7 +95,7 @@ section {
 
 .divider {
     border: none;
-    border-top: 1px solid var(--border);
+    border-top: 1px solid var(--border-color);
     max-width: 1200px;
     margin: 0 auto;
 }

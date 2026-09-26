@@ -5,14 +5,15 @@
 }
 
 .work-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
     border-radius: 0.5rem;
     overflow: hidden;
     cursor: pointer;
     padding: 2.5rem;
     opacity: 0;
     transform: translateY(16px);
+    box-shadow: var(--shadow);
 }
 
 .work-card.is-visible {
@@ -38,7 +39,7 @@
 .tech-badge {
     font-family: var(--font-mono);
     font-size: 0.7rem;
-    color: var(--accent);
+    color: var(--accent-color);
     background: rgba(56, 189, 248, 0.1);
     border: 1px solid rgba(56, 189, 248, 0.2);
     padding: 0.25rem 0.6rem;
@@ -55,14 +56,14 @@
 .work-name {
     font-size: 1.35rem;
     font-weight: 600;
-    color: var(--text-heading);
+    color: var(--text-color);
     margin-bottom: 0.25rem;
     margin-top: 0;
 }
 
 .work-type {
     font-size: 0.9rem;
-    color: var(--accent);
+    color: var(--accent-color);
     /* Using Accent Color to make the App type stand out more */
     font-weight: 500;
     display: block;
@@ -71,7 +72,7 @@
 
 .work-desc {
     font-size: 0.95rem;
-    color: var(--text-body);
+    color: var(--text-color);
     line-height: 1.6;
     margin-top: 0;
 }
@@ -86,7 +87,7 @@
 .project-link {
     font-size: 0.85rem;
     font-weight: 500;
-    color: var(--text-heading);
+    color: var(--text-color);
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -96,13 +97,13 @@
 .project-link::before {
     content: '↗';
     margin-right: 0.35rem;
-    color: var(--accent);
+    color: var(--accent-color);
     transition: transform 0.2s ease;
     font-weight: 600;
 }
 
 .project-link:hover {
-    color: var(--accent);
+    color: var(--accent-color);
 }
 
 .project-link:hover::before {

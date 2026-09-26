@@ -1,6 +1,6 @@
 footer {
-    background: #0B1324;
-    border-top: 1px solid var(--border);
+    background: var(--bg-color);
+    border-top: 1px solid var(--border-color);
     padding: 2.5rem 3rem;
 }
 
@@ -15,7 +15,18 @@ footer {
 .footer-copy {
     font-family: var(--font-mono);
     font-size: 0.8rem;
-    color: var(--text-muted);
+    color: var(--text-color);
+}
+
+.footer-copy a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-copy a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
 }
 
 @media (max-width: 900px) {

@@ -106,8 +106,8 @@ h1 em {
 }
 
 .profile-container {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 270px;
     border-radius: 50%;
     border: 2px solid var(--accent-color);
     padding: 5px;
@@ -291,7 +291,7 @@ h1 {
     .profile-container {
         transform: none;
         width: 160px;
-        height: 160px;
+        height: 180px;
         margin-bottom: -20px;
         /* Overlap slightly with terminal */
         z-index: 3;

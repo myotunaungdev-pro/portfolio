@@ -1,8 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './Hero.css';
-import profileImg from '../../assets/profile.webp';
-
+import profileImg from '../../assets/myo_tun_aung.jpg';
 
 export default function Hero() {
     const { t } = useTranslation();

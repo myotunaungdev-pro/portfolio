@@ -1,6 +1,10 @@
-# 🚀 Myo Tun Aung - Professional Portfolio
+﻿# 🚀 Myo Tun Aung - Professional Portfolio
 
-![Portfolio Preview](./src/assets/preview.png)
+## 📸 Screenshots
+![Hero Section](./src/assets/hero-preview.png)
+![Projects Section](./src/assets/projects-preview.png)
+![Abouts Section](./src/assets/abouts-preview.png)
+![Contact Section](./src/assets/contact-preview.png)
 
 A carefully optimized, component-driven client-side application featuring lightweight rendering, structural code patterns, and a modern terminal-inspired UI. Built to showcase my expertise in Full-Stack (MERN) development and AI integration.
 
@@ -18,6 +22,33 @@ A carefully optimized, component-driven client-side application featuring lightw
 - **Frontend:** React (Vite), CSS3 (Flexbox/Grid), HTML5
 - **Deployment:** Vercel / Netlify
 - **Version Control:** Git & GitHub (Feature Branch Workflow)
+
+## 📂 Folder Structure
+
+```text
+├── public/                 # Static assets (favicon, etc.)
+├── src/
+│   ├── assets/             # Images, fonts, and global assets
+│   ├── components/         # Reusable React components
+│   │   ├── About/          # About section component & styles
+│   │   ├── Contact/        # Contact section component & styles
+│   │   ├── Footer/         # Footer component & styles
+│   │   ├── Hero/           # Hero/Header section component & styles
+│   │   ├── Navbar/         # Navigation bar component & styles
+│   │   └── Projects/       # Projects section component & styles
+│   ├── data/               # Local JSON data files
+│   │   └── projects.json   # Dynamic portfolio project data
+│   ├── i18n/               # Internationalization setup
+│   │   ├── locales/        # Translation JSON files
+│   │   │   ├── en.json     # English translations
+│   │   │   └── mm.json     # Myanmar translations
+│   │   └── i18n.js         # i18next configuration
+│   ├── App.jsx             # Main application component
+│   ├── index.css           # Global CSS and CSS variables
+│   └── main.jsx            # React DOM entry point
+├── package.json            # Project dependencies and scripts
+└── vite.config.js          # Vite configuration
+```
 
 ## ⚙️ Local Installation
 
@@ -54,6 +85,6 @@ To run this project locally, follow these steps:
 ### 📬 Contact & Links
 
 * **GitHub:** [@myotunaungdev-pro](https://github.com/myotunaungdev-pro)
-* **Email:** [myotunaung.dev@gmail.com](myotunaung.dev@gmail.com)
+* **Email:** [myotunaung.dev@gmail.com](mailto:myotunaung.dev@gmail.com)
 
 *Designed and built with ❤️ by Myo Tun Aung.*

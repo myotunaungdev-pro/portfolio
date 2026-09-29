@@ -5,7 +5,7 @@
     "contact": "ဆက်သွယ်ရန်"
   },
   "hero": {
-    "role": "FULL-STACK (MERN) & AI ENGINEER",
+    "role": "Full-Stack (MERN) & AI-Driven Developer",
     "title1": "ခိုင်မာတဲ့ စနစ်တွေကို",
     "title2": "Code တွေ Logic တွေနဲ့",
     "title3": "တည်ဆောက်နေပါတယ်။",
@@ -22,10 +22,12 @@
     "sectionLabel": "ကျွန်တော့်အကြောင်း တစေ့တစောင်း",
     "sectionTitle": "ကိုယ့်ဘာသာကြိုးစားလေ့လာသူ ဘဝကနေ Systems တွေကို စနစ်တကျတည်ဆောက်သူတစ်ယောက်ဖြစ်လာပုံ။",
     "sectionSub": "မိသားစုကို ထောက်ပံ့ချင်တဲ့ စိတ်ဆန္ဒတွေနဲ့အတူ Project တစ်ခုချင်းစီတိုင်းကို အနာဂတ်မှာ Senior Engineer တစ်ယောက်ဖြစ်လာမယ့် ရည်မှန်းချက်နဲ့ အကောင်းဆုံး၊ အတိကျဆုံးဖြစ်အောင် အမြဲကြိုးစားနေပါတယ်။",
-    "value1Title": "Architecture Over Syntax",
+    "value1Title": "Syntax ထက် Architecture",
     "value1Desc": "Framework တွေကတော့ အမြဲပြောင်းလဲနေမှာပါပဲ။ ဒါပေမယ့် System Design၊ Scalable ဖြစ်တဲ့ Folder Structure တွေနဲ့ Clean Code ရေးသားမှုတွေကတော့ အမြဲတမ်းအရေးပါပါတယ်။ ဒါကြောင့် ကျွန်တော်က Architecture နဲ့ ဖွဲ့စည်းပုံခိုင်မာမှုကို အမြဲဦးစားပေးပါတယ်။",
-    "value2Title": "Reliable Execution",
+    "value2Title": "ယုံကြည်စိတ်ချရတဲ့ Execution",
     "value2Desc": "အလုပ်တစ်ခုကို သတ်မှတ်ထားတဲ့ အချိန်အတွင်းမှာ သေသေချာချာ ပြီးမြောက်အောင်လုပ်ရတာကို သဘောကျပါတယ်။ Validation Layer တွေရေးတာပဲဖြစ်ဖြစ်၊ Prompt Engineering Loops တွေဖန်တီးတာပဲဖြစ်ဖြစ် Logic တွေကို စဉ်းစားထားတဲ့အတိုင်း တိတိကျကျ အလုပ်လုပ်အောင် ဖန်တီးပါတယ်။",
+    "value3Title": "AI နဲ့ အားဖြည့်ထားတဲ့ Efficiency",
+    "value3Desc": "ကျွန်တော်က MERN stack နဲ့ Web တွေရေးတယ်၊ AI တွေ ပေါင်းထည့်တယ်။ နေ့စဉ် အလုပ်လုပ်တဲ့အခါ AI Tools တွေကို အသုံးချတဲ့အတွက် အရည်အသွေးမြင့်တဲ့ Code တွေကို အလွန်မြန်ဆန်တဲ့ နှုန်းထားနဲ့ ရေးသားနိုင်ပါတယ်။",
     "skills": {
       "frontend": "Frontend",
       "backend": "Backend & DB",

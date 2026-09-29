@@ -5,7 +5,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "role": "FULL-STACK (MERN) & AI ENGINEER",
+    "role": "Full-Stack (MERN) & AI-Driven Developer",
     "title1": "Building Scalable",
     "title2": "Systems with",
     "title3": "Code & Logic.",
@@ -26,6 +26,8 @@
     "value1Desc": "Frameworks come and go, but core concepts like System Design, scalable folder structures, and clean code principles are here to stay. I always prioritize these structural foundations first.",
     "value2Title": "Reliable Execution",
     "value2Desc": "I love getting things done right and on time. Whether it's setting up validation layers or writing prompt engineering loops, I make sure the logic runs exactly as intended.",
+    "value3Title": "AI-Augmented Efficiency",
+    "value3Desc": "I build scalable web applications using the MERN stack and integrate practical AI solutions. By leveraging AI tools in my daily workflow, I deliver high-quality, production-ready code with exceptional speed and efficiency.",
     "skills": {
       "frontend": "Frontend",
       "backend": "Backend & DB",

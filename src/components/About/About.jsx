@@ -101,6 +101,13 @@ export default function About() {
                             <p>{t('about.value2Desc')}</p>
                         </div>
                     </div>
+                    <div className="value-item">
+                        <div className="value-dot">03</div>
+                        <div className="value-text">
+                            <strong>{t('about.value3Title')}</strong>
+                            <p>{t('about.value3Desc')}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

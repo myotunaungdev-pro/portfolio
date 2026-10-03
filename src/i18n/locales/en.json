@@ -10,8 +10,8 @@
     "title2": "Systems with",
     "title3": "Code & Logic.",
     "description": "I'm a developer who loves building solid web architectures and integrating AI solutions. For me, it's not just about writing code—it's about building systems that actually solve problems and make things work better.",
-    "hireMe": "Hire me on Upwork",
-    "github": "View My GitHub"
+    "github": "View GitHub",
+    "linkedin": "Connect on LinkedIn"
   },
   "projects": {
     "sectionLabel": "MY RECENT WORK",
@@ -53,7 +53,7 @@
     }
   },
   "footer": {
-    "copy": "© 2026 Myo Tun Aung. Engineered for global performance.",
+    "copy": "© 2026 Myo Tun Aung (Joseph). Engineered for global performance.",
     "status": "[ Ready for production ]"
   }
 }

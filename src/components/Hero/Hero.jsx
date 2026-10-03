@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { siteConfig } from '../../config/siteConfig';
 import './Hero.css';
 import profileImg from '../../assets/myo_tun_aung.jpg';
 
@@ -15,8 +16,8 @@ export default function Hero() {
                     {t('hero.description')}
                 </p>
                 <div className="hero-actions">
-                    <a href="https://www.upwork.com" target="_blank" rel="noreferrer" className="btn-primary">{t('hero.hireMe')}</a>
-                    <a href="https://github.com/myotunaungdev-pro" target="_blank" rel="noreferrer" className="btn-ghost">{t('hero.github')}</a>
+                    <a href={siteConfig.social.github} target="_blank" rel="noreferrer" className="btn-primary">{t('hero.github')}</a>
+                    <a href={siteConfig.social.linkedin} target="_blank" rel="noreferrer" className="btn-ghost">{t('hero.linkedin')}</a>
                 </div>
             </div>
 

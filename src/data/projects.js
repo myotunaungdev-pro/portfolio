@@ -1,4 +1,6 @@
-[
+import { siteConfig } from '../config/siteConfig';
+
+const projects = [
     {
         "id": "proj-001",
         "name": {
@@ -22,7 +24,7 @@
             "i18next",
             "Stripe API"
         ],
-        "githubLink": "https://github.com/myotunaungdev-pro/min-note",
+        "githubLink": `${siteConfig.social.github}/min-note`,
         "liveLink": "https://min-note.vercel.app/",
         "image": "/assets/",
         "isFeatured": true
@@ -47,9 +49,11 @@
             "CSS",
             "Framer Motion"
         ],
-        "githubLink": "https://github.com/myotunaungdev-pro/portfolio",
+        "githubLink": `${siteConfig.social.github}/portfolio`,
         "liveLink": "",
         "image": "/assets/",
         "isFeatured": false
     }
-]
+];
+
+export default projects;

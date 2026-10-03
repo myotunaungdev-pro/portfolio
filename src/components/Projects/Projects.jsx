@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import projectData from '../../data/projects.json';
+import projectData from '../../data/projects.js';
 import './Projects.css';
 
 export default function Projects() {

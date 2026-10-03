@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
+import { siteConfig } from '../../config/siteConfig';
 import './Contact.css';
 
 export default function Contact() {
@@ -94,12 +95,12 @@ export default function Contact() {
                     <h2 className="contact-heading">{t('contact.heading1')} <em>{t('contact.heading2')}</em></h2>
                     <p className="contact-sub">{t('contact.sub')}</p>
                     <div className="contact-links">
-                        <a href="mailto:myotunaung.dev@gmail.com" className="contact-link">
-                            <span className="contact-link-icon">//</span> myotunaung.dev@gmail.com
+                        <a href={siteConfig.social.facebook} target="_blank" rel="noreferrer" className="contact-link">
+                            <span className="contact-link-icon">//</span> Facebook
                         </a>
 
-                        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="contact-link">
-                            <span className="contact-link-icon">//</span> linkedin.com
+                        <a href={`mailto:${siteConfig.social.email}`} className="contact-link">
+                            <span className="contact-link-icon">//</span> Gmail
                         </a>
                     </div>
                 </div>
@@ -117,10 +118,10 @@ export default function Contact() {
                     </div>
                     <div className="form-field">
                         <label>{t('contact.form.messageLabel')}</label>
-                        <textarea 
-                            rows="4" 
-                            name="message" 
-                            placeholder={t('contact.form.messagePlaceholder')} 
+                        <textarea
+                            rows="4"
+                            name="message"
+                            placeholder={t('contact.form.messagePlaceholder')}
                             onChange={handleTextareaChange}
                             style={{ overflow: 'hidden', resize: 'none' }}
                             required

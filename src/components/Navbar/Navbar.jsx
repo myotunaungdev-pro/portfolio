@@ -25,7 +25,7 @@ export default function Navbar() {
     return (
         <nav className="nav-container">
             <div className="nav-brand">
-                <a href="#" className="nav-logo">Myo Tun Aung</a>
+                <a href="#" className="nav-logo">Myo Tun Aung (Joseph)</a>
             </div>
 
             <div className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>

@@ -145,7 +145,35 @@
         gap: 3rem;
     }
 
+    .contact-form {
+        width: 100%;
+        max-width: none;
+    }
+
+    .contact-links {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-link {
+        width: fit-content;
+    }
+
     .form-row {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 5rem 1.5rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .contact-link {
+        font-size: 0.8rem;
     }
 }
